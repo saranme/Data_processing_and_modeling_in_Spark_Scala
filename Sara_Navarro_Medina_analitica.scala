@@ -1,17 +1,3 @@
-'''
-Hola Sara,
-dado que lo has subido a una URL, vamos a utilizarla. Desde dentro del contenedor deberías ejecutar:
-wget https://raw.githubusercontent.com/saranme/x/main/rain_tomorrow_in_australia_mod.csv -P /root/wget https://raw.githubusercontent.com/saranme/x/main/rain_tomorrow_in_australia_mod.csv
-
-'''
-// abrir el docker desktop. En terminal:
-// docker system prune
-// docker run -dit -p 4040:4040 -p 9070:50070 -p 8080:8080 -p 8081:8081 --name bigdata mafernandezd/big_data:v4
-// docker exec -it bigdata bash
-// cd /root/spark-2.4.4-bin-hadoop2.7/
-// bin/spark-shell
-// chuleta: https://learn-eu-central-1-prod-fleet01-xythos.content.blackboardcdn.com/5d3210a6eb3d6/2089220?X-Blackboard-Expiration=1647648000000&X-Blackboard-Signature=WxJOXTXU5j7JQBFYcj5QVrAi6tREVV6epnnjikEfsPg%3D&X-Blackboard-Client-Id=347294&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27Docker%2520comandos.txt&response-content-type=text%2Fplain&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaDGV1LWNlbnRyYWwtMSJHMEUCIFsvVnbVLYPn1QHeKYyL%2FN6tsgvHMF6jH8eAALfT5TP2AiEAs0M6u9AUyVAT6TI1BWUHavKWLCyfUAzu57NGqo3WuJkqiQQIw%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgw2MzU1Njc5MjQxODMiDB7IulETRLK2J%2FK2PyrdA%2B7vgY6Rw1NaAZa%2BKqprcYAhB2wa%2B9hwT3ZAgt4h3zcSsD%2FKRfvzT2FxOn%2B7OFc2TTKKC24k7MNYHvk05UKoo7Zd2gfGV40M5KB%2BmCpaaqBB%2FVzIksxEylwAHtN9xwgZO%2FSsZ4RFh1Miz1XodwJCKWgp%2FE0KbHs7zTEGjxPM55YgCJ%2FhKl1kUhXwTefbAI7tbOOYANMAOxu11y%2BSVOs3pMIaVpGUgTaAKcK7vDj8fTuhZKcNTF1qPPQc2tigoJaIhQuoQvnH1m%2FC4x%2FxMbvYUhP3E8pPdolmV2Rtcf8ksd52luFmlcjfYzsdStZ75bu6Imwt7iKEWY%2BWruPsWt3vrj0wQERipzd4OrimeDXBObgH8JqscZeXAw7jv%2BmRzDtRhpRhBfRSK%2FI69WoP49VFaRc7m98KxQlNBbCleRTSzHe0LILA98qNq5QuW%2BIb5eGV94PHutxd9VlN%2FSG6qjniQm%2ByhAt8Yb5JFFG%2B7tpICneVqm4nSUnM8AqzXmLxJvDbYO4cRaGg7phlRZQUb1YbVZAdlITL%2FykOSSAhQJKcJ7rr%2FlAZue%2Bgz8wnZnVj3OadCAKN1sF%2BfqMY%2B5ZjwJ27I7Vj1u%2BKlMdmQ4SynDhUssjmxZ4%2FueMRa9hBgfykDDDXl9ORBjqlAasVc5C78lqGtZvGlEKpnjPnxGMNp2swMk76SCOMb3uZlZ9FmasTmrxvryZviDXvtlnnHu6RCnt%2B8qhwEjbmRdFWk3n2e4Fpx%2BLQwfXDmZlWtWCy%2BltlR9LelXNJkqXjqT8eDS3NYCLLnXXeIkdQgsJ5fauyFberT%2BqwmikV%2FuS3rQacdsBAAjeAh26t8GHkmjj4wq6bx6EsvmD%2F405RIbPLwLMATg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220318T180000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIAZH6WM4PL4KL2PSV6%2F20220318%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=8b99da54b772a8d938973b15f0e13e2acc0ed436e08e052a3917ae9b4cbeb6e1
-
 import org.apache.spark.sql.{Dataset, Row}
 import org.apache.spark.sql.types.{DoubleType, StringType}
 import org.apache.spark.ml.{Pipeline, PipelineModel}
